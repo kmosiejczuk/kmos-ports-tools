@@ -4,7 +4,5 @@
 
 PATH=$HOME/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/usr/local/bin:/usr/local/sbin:/usr/games:/usr/ports/infrastructure/bin:.
 export PATH HOME TERM
-CVSROOT=anoncvs@anoncvs2.usa.openbsd.org:/cvs
-export CVSROOT
 
 export ENV=/home/kurt/.kshrc
