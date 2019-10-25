@@ -9,3 +9,5 @@ Kurt's OpenBSD Ports Tools
 	- What I use for /etc/mk.conf (Although with more comments)
 - profile
 	- Basic parts of my .profile
+- exrc
+	- The ports support parts of my .exrc (vi dotfile)
