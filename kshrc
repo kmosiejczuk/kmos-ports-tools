@@ -8,6 +8,9 @@ export CVSROOT=anoncvs@filedump.se.rit.edu:/cvs
 # it work in 100% of cases
 #export PORTSDIR=/home/ports
 
+# Useful when snapshots think they are release
+export PKG_ADD="/usr/sbin/pkg_add -Dsnap"
+
 alias portsql='sqlite3 /usr/local/share/sqlports'
 alias portslol='make 2>&1 | /usr/ports/infrastructure/bin/portslogger .'
 alias port-pldc='make port-lib-depends-check'
