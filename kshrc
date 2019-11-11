@@ -18,6 +18,7 @@ alias port-ldc='make lib-depends-check'
 alias port-pdiff='diff -up pkg/PLIST.orig pkg/PLIST'
 alias portsrc='cd `make show=WRKSRC`'
 alias port-fast='MAKE_JOBS=4 make'
+alias orig-clean='rm *.orig */*.orig'
 
 # To cleanup both flavors of a python port
 alias cleanup='make clean=all && env FLAVOR=python3 make clean=all'
