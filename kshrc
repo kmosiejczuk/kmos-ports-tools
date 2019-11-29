@@ -41,4 +41,4 @@ port-pygrep() { (cd /usr/ports; grep "$@" */*/py-*/Makefile */py-*/Makefile ) ;}
 
 portsfind() { find /usr/ports -iname "${1}" -exec grep -iH ${2} {} \; ;}
 
-function vibak { for i; do [ -f "$i.orig" ] || doas -u _pbuild cp "$i" "$i.orig"; done; doas -u _pbuild env HOME=/home/pbuild ${EDITOR:=/usr/bin/vi} "$@" ; }
+function vibak { for i; do [ -f "$i.orig" ] || doas -u _pbuild cp "$i" "$i.orig"; done; doas -u _pbuild env HOME=/home/pbuild ${EDITOR:-/usr/bin/vi} "$@" ; }
