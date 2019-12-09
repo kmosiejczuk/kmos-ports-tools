@@ -41,4 +41,6 @@ port-pygrep() { (cd /usr/ports; grep "$@" */*/py-*/Makefile */py-*/Makefile ) ;}
 
 portsfind() { find /usr/ports -iname "${1}" -exec grep -iH ${2} {} \; ;}
 
+# backs up a file to .orig and opens vi as the _pbuild user for editing
+# precursor to use of make update-patches
 function vibak { for i; do [ -f "$i.orig" ] || doas -u _pbuild cp "$i" "$i.orig"; done; doas -u _pbuild env HOME=/home/pbuild ${EDITOR:-/usr/bin/vi} "$@" ; }
