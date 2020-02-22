@@ -11,3 +11,5 @@ Kurt's OpenBSD Ports Tools
 	- Basic parts of my .profile
 - exrc
 	- The ports support parts of my .exrc (vi dotfile)
+- cvsrc
+	- .cvsrc file recommended for OpenBSD, but with comments

@@ -1,0 +1,16 @@
+#
+# Defaults for cvs commands
+#
+# -q have cvs be quieter
+cvs -q
+# -u Produce a unified diff
+# -N Don't shorten module paths
+# -p pretty sure I can find this option yet
+diff -uNp
+# -P Prune empty directories
+# -d Add any new directories
+update -Pd
+# -P Prune empty directories
+checkout -P
+# -u Produce a unified diff
+rdiff -u
