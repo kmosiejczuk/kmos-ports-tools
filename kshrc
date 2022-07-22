@@ -36,6 +36,9 @@ port-lessdiff() { less /usr/ports/mystuff/${PWD##*/}.diff  ; }
 # greps all Makefiles in ports tree for the supplied term
 port-grep() { (cd /usr/ports; grep "$@" */*/Makefile; grep "$@" */*/*/Makefile ) ;}
 
+# greps all PLIST files in ports tree for the supplied term
+plist-grep() { (cd /usr/ports; grep "$@" */*/pkg/PLIST */*/*/pkg/PLIST ) ;}
+
 # Only greps Makefiles in ports directories that start with py-
 port-pygrep() { (cd /usr/ports; grep "$@" */*/py-*/Makefile */py-*/Makefile ) ;}
 
